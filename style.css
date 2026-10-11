@@ -194,8 +194,8 @@ position:relative;
 overflow:hidden;
 background:linear-gradient(
 135deg,
-#faf9f6 0%,
-#f3efe7 100%
+#895731 0%,
+#eddecf 100%
 )
 }
 
@@ -208,7 +208,7 @@ right:-190px;
 top:80px;
 background:radial-gradient(
 circle,
-#e6edf0 0,
+#95a9b2 0,
 #eef1ef 45%,
 transparent 70%
 )
@@ -310,7 +310,7 @@ position:relative
 }
 
 .browser{
-background:white;
+background:rgb(193, 187, 187);
 border:1px solid #dfe0dc;
 border-radius:10px;
 padding:9px;
