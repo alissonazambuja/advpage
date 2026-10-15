@@ -1,0 +1,534 @@
+:root {
+    --bg-main: #F1F5F9;           /* Fundo Cinza-Claro Elegante */
+    --bg-card: #FFFFFF;           /* Cards em Branco */
+    --bg-section-alt: #E2E8F0;    /* Seção Alternada em Tom Neutro */
+    --primary-red: #8B0000;       /* Vermelho Vinho Nobre */
+    --btn-red: #9B111E;           /* Vermelho Botão */
+    --btn-red-hover: #7A0C16;
+    --text-dark: #0F172A;         /* Texto Escuro */
+    --text-muted: #475569;        /* Texto Secundário */
+    --border-color: #CBD5E1;      /* Borda Fina */
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo-title {
+    font-family: var(--font-heading);
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.text-center { text-align: center; }
+.mt-4 { margin-top: 2.5rem; }
+
+/* Navbar */
+.navbar {
+    background: #FFFFFF;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary-red);
+    display: block;
+}
+
+.logo-sub {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+    display: block;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-red);
+}
+
+/* Botões Vermelhos */
+.btn-red {
+    background: var(--btn-red);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 1.1rem 2.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(155, 17, 30, 0.25);
+    border: none;
+}
+
+.btn-red i {
+    font-size: 1.3rem;
+}
+
+.btn-red:hover {
+    background: var(--btn-red-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(122, 12, 22, 0.35);
+}
+
+.btn-small {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.8rem;
+}
+
+/* Hero Section com Imagem e Camada de Suavização */
+.hero {
+    padding: 6.5rem 0;
+    position: relative;
+    background-image: 
+        linear-gradient(180deg, rgba(241, 245, 249, 0.82) 0%, rgba(226, 232, 240, 0.90) 100%),
+        var(--hero-bg, url('../img/themis-removebg-preview.png'));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+    color: var(--primary-red);
+}
+
+.hero-subtext {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.hero-highlight {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+/* Serviços */
+.problems-section {
+    padding: 5.5rem 0;
+    background: var(--bg-main);
+}
+
+.problems-section h2 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: var(--primary-red);
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1.8rem;
+    text-align: left;
+}
+
+.card-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 2.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.card-box:hover {
+    border-color: var(--primary-red);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(139, 0, 0, 0.12);
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.card-box h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: var(--text-dark);
+}
+
+.card-box p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.card-highlight-red {
+    background: #FFF5F5;
+    border: 1.5px solid var(--primary-red);
+}
+
+.card-highlight-red h3 {
+    color: var(--primary-red);
+}
+
+.card-full {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.cta-wrap {
+    margin-top: 3.5rem;
+}
+
+/* Mid CTA */
+.mid-cta-section {
+    padding: 4.5rem 0;
+    background: var(--bg-section-alt);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.mid-cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    color: var(--text-dark);
+}
+
+/* Quem Sou & Área da Foto */
+.about-section {
+    padding: 5.5rem 0;
+    background: var(--bg-main);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-red);
+}
+
+.about-text p {
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+
+.about-text p strong {
+    color: var(--text-dark);
+}
+
+.about-photo-area {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 0.8rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 380px;
+}
+
+.lawyer-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Localização */
+.stats-section {
+    background: var(--bg-section-alt);
+    padding: 4.5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.stats-section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-red);
+}
+
+.location-text {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.location-text strong {
+    color: var(--text-dark);
+}
+
+/* Footer */
+.footer {
+    background: #0F172A;
+    color: #FFFFFF;
+    padding: 4.5rem 0 2rem;
+}
+
+.footer .logo-title {
+    color: #FFFFFF;
+}
+
+.footer .logo-sub {
+    color: var(--border-color);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer-contact h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+}
+
+.footer-contact p {
+    color: #94A3B8;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.copyright {
+    border-top: 1px solid #1E293B;
+    padding-top: 1.5rem;
+    color: #94A3B8;
+    font-size: 0.8rem;
+}
+
+/* Botão Flutuante do WhatsApp */
+.float-wa {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.float-wa:hover {
+    transform: scale(1.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    .btn-red { width: 100%; text-align: center; }
+}
+
+.hero-content h1 .texto-preto {
+    color: #000000;
+}
+
+.card-box {
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+.float-wa {
+    animation: pulse 3s infinite;
+}
+
+/* 1. Animação de pulsação contínua no botão flutuante do WhatsApp (canto inferior direito) */
+@keyframes pulsarWhatsApp {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        transform: scale(1.12);
+        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.float-wa {
+    animation: pulsarWhatsApp 2s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.float-wa:hover {
+    animation: none;
+    transform: scale(1.2);
+}
+
+/* 2. Efeito de zoom na foto da advogada ao passar o mouse */
+.about-photo-area .photo-card {
+    overflow: hidden; /* Mantém os cantos arredondados sem vazar a imagem */
+}
+
+.about-photo-area .lawyer-photo {
+    transition: transform 0.4s ease;
+}
+
+.about-photo-area .photo-card:hover .lawyer-photo,
+.about-photo-area .lawyer-photo:hover {
+    transform: scale(1.25); /* Aumenta a foto em 8% */
+}
+
+/* Barra de topo de atendimento rápido */
+.top-bar-alert {
+    background-color: #111827;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.top-bar-alert span {
+    color: #25d366;
+    font-weight: 700;
+}
+
+.security-badges {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.security-badges i {
+    color: #10b981;
+    margin-right: 4px;
+}
+
+.card-box {
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-box:hover {
+    border-color: #c5a059; /* Cor dourada refinada */
+    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.15);
+}
+
+.btn-red {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-red::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.25);
+    transform: rotate(30deg);
+    transition: all 0.6s ease;
+}
+
+.btn-red:hover::after {
+    left: 120%;
+}
