@@ -8,7 +8,7 @@
    --sand: fundos alternativos | --rose: detalhe suave
    ===================================================== */
 :root{
---bg:#F4F6F8;
+--bg:#bdbaad;
 --paper:#FFFFFF;
 --ink:#202A35;
 --muted:#667482;
@@ -56,7 +56,7 @@ left:12px;
 top:-60px;
 z-index:999;
 background:var(--ink);
-color:white;
+color:rgb(209, 161, 100);
 padding:12px 16px;
 border-radius:0 0 8px 8px
 }
@@ -139,7 +139,7 @@ margin-top:3px
 display:flex;
 gap:27px;
 align-items:center;
-font-size:11px;
+font-size:18px;
 font-weight:600;
 color:#55616a
 }
@@ -203,13 +203,8 @@ position:relative;
 overflow:hidden;
 background:linear-gradient(
 135deg,
-<<<<<<< HEAD
-#895731 0%,
-#eddecf 100%
-=======
 #30475C 0%,
 #E7EEF3 100%
->>>>>>> 81ac6fa (Melhora fontes e atualiza paginas da AdvPage)
 )
 }
 
@@ -222,13 +217,8 @@ right:-190px;
 top:80px;
 background:radial-gradient(
 circle,
-<<<<<<< HEAD
-#95a9b2 0,
-#eef1ef 45%,
-=======
 #AFC2D0 0,
 #F3F6F8 45%,
->>>>>>> 81ac6fa (Melhora fontes e atualiza paginas da AdvPage)
 transparent 70%
 )
 }
@@ -330,11 +320,7 @@ position:relative
 
 .browser{
 background:rgb(193, 187, 187);
-<<<<<<< HEAD
-border:1px solid #dfe0dc;
-=======
 border:1px solid #DCE3E8;
->>>>>>> 81ac6fa (Melhora fontes e atualiza paginas da AdvPage)
 border-radius:10px;
 padding:9px;
 box-shadow:0 30px 70px rgba(30,53,69,.13);
@@ -483,7 +469,7 @@ gap:70px
 }
 
 .section-kicker{
-font-size:9px;
+font-size:12px;
 font-weight:800;
 letter-spacing:.18em;
 color:#7D8D9A
@@ -774,7 +760,7 @@ color:var(--blue)
 
 .pricing{
 padding:120px 0;
-background:#EAF0F4
+background:#bedad5
 }
 
 .pricing-head{
@@ -787,7 +773,7 @@ align-items:end
 .pricing-head>p{
 max-width:370px;
 color:var(--muted);
-font-size:13px
+font-size:15px
 }
 
 .price-grid{
@@ -798,12 +784,12 @@ margin-top:55px
 }
 
 .price-card{
-background:white;
+background:rgb(134, 183, 185);
 border:1px solid #D8E2E8;
 border-radius:10px;
 padding:40px;
 box-shadow:0 18px 45px rgba(30,53,69,.08);
-transition:.35s ease
+transition:.44s ease
 }
 
 .price-card:hover{
@@ -816,7 +802,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 color:var(--gold);
-font-size:9px;
+font-size:17px;
 letter-spacing:.15em;
 font-weight:800
 }
@@ -826,7 +812,7 @@ background:#E4EFEE;
 color:#3F7773;
 padding:7px 9px;
 border-radius:20px;
-font-size:7px
+font-size:13px
 }
 
 .price-card h3{
@@ -846,7 +832,7 @@ color:var(--muted)
 }
 
 .price-note{
-font-size:11px;
+font-size:19px;
 color:var(--muted);
 max-width:500px
 }
@@ -859,7 +845,7 @@ margin:25px 0
 .price-card li{
 padding:10px 0;
 border-bottom:1px solid #E6EBEF;
-font-size:11px
+font-size:13px
 }
 
 .full{
@@ -877,7 +863,7 @@ justify-content:space-between
 }
 
 .price-side span{
-font-size:8px;
+font-size:14px;
 letter-spacing:.17em;
 color:#CCD9E1;
 font-weight:800
@@ -902,7 +888,7 @@ margin-top:12px
 
 .process{
 padding:125px 0;
-background:white
+background:rgb(199, 206, 207)
 }
 
 .steps{
@@ -1071,7 +1057,7 @@ gap:25px
 }
 
 .footer-top nav a{
-font-size:10px
+font-size:15px
 }
 
 .footer-bottom{
@@ -1080,7 +1066,7 @@ padding:18px 0;
 display:flex;
 justify-content:space-between;
 gap:20px;
-font-size:9px;
+font-size:13px;
 color:#8996A2
 }
 
@@ -1232,13 +1218,13 @@ width:min(100% - 30px,600px)
 }
 
 .logo .site-logo{
-width:45px;
-height:45px
+width:100px;
+height:100px
 }
 
 .footer-logo .site-logo{
-width:42px;
-height:42px
+width:70px;
+height:70px
 }
 
 .logo-text{
