@@ -127,9 +127,13 @@ h1, h2, h3, .logo-title {
 .hero {
     padding: 6.5rem 0;
     position: relative;
-    background-image: 
-        linear-gradient(180deg, rgba(241, 245, 249, 0.82) 0%, rgba(226, 232, 240, 0.90) 100%),
-        var(--hero-bg, url('../img/themis-removebg-preview.png'));
+    background-image:
+    linear-gradient(
+        180deg,
+        rgba(241, 245, 249, 0.45) 0%,
+        rgba(226, 232, 240, 0.55) 100%
+    ),
+    url('../img/themis-removebg-preview.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -531,4 +535,9 @@ h1, h2, h3, .logo-title {
 
 .btn-red:hover::after {
     left: 120%;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 81ac6fa (Melhora fontes e atualiza paginas da AdvPage)

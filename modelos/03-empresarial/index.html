@@ -1,13 +1,409 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Advocacia Empresarial | Modelo 03 — AdvPage</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-</head><body>
-<div class="bar"><a href="../../index.html">← Voltar para a AdvPage</a><b>MODELO 03 · DEMONSTRATIVO</b></div>
-<header><a class="logo" href="#top">JURIS<span>PAGE</span></a><nav><a href="#atuacao">Atuação</a><a href="#estrategia">Estratégia</a><a href="#contato">Contato</a></nav><a class="toplink" href="#contato">Solicitar contato</a></header>
-<main id="top">
-<section class="hero"><div><p class="eyebrow">ADVOCACIA EMPRESARIAL</p><h1>Decisões jurídicas que protegem o negócio.</h1><p class="lead">Um posicionamento digital sóbrio e estratégico para escritórios que atuam ao lado de empresas, gestores e empreendedores.</p><div class="actions"><a class="btn dark" href="#atuacao">Conhecer a atuação</a><a href="#atuacao" class="link">Ver áreas de atuação ↘</a></div></div><div class="visual"><div class="vtop"><span>03</span><span>ESTRATÉGIA JURÍDICA</span></div><div class="ae">AE</div><div class="vbottom"><b>ADVOCACIA</b><span>EMPRESARIAL</span></div></div></section>
-<section class="statement"><p class="eyebrow">POSICIONAMENTO</p><h2>Clareza para compreender riscos. Estratégia para tomar decisões.</h2><p>Uma página jurídica empresarial deve comunicar autoridade sem excesso. Este conteúdo é demonstrativo e pode ser substituído pelas informações reais do escritório.</p></section>
-<section class="areas" id="atuacao"><p class="eyebrow">ÁREAS DE ATUAÇÃO</p><h2>Assessoria jurídica para diferentes momentos do negócio.</h2><div class="grid">
-<article><small>01</small><h3>Contratos</h3><p>Análise, elaboração e revisão de instrumentos contratuais.</p></article><article><small>02</small><h3>Societário</h3><p>Estruturação de relações entre sócios e organização jurídica.</p></article><article><small>03</small><h3>Consultivo</h3><p>Orientação preventiva para apoiar decisões empresariais.</p></article><article><small>04</small><h3>Contencioso</h3><p>Atuação estratégica em disputas ligadas ao negócio.</p></article></div></section>
-<section class="split" id="estrategia"><div class="quote">“<p>O jurídico precisa acompanhar o negócio antes que o problema apareça.</p></div><div class="about"><p class="eyebrow">ATUAÇÃO PERSONALIZADA</p><h2>Informação jurídica apresentada de forma objetiva.</h2><p>Espaço para apresentar abordagem, experiência, valores profissionais e forma de atendimento.</p><div class="facts"><div><b>10+</b><span>anos de experiência<br><i>exemplo ilustrativo</i></span></div><div><b>04</b><span>frentes de atuação<br><i>exemplo ilustrativo</i></span></div></div></div></section>
-<section class="process"><div><p class="eyebrow">COMO FUNCIONA</p><h2>Uma comunicação jurídica feita para ser compreendida.</h2></div><div class="steps"><div><small>01</small><h3>Entendimento</h3><p>Conhecer o contexto e as necessidades do cliente.</p></div><div><small>02</small><h3>Análise</h3><p>Organizar informações e identificar caminhos jurídicos.</p></div><div><small>03</small><h3>Orientação</h3><p>Apresentar alternativas de maneira clara e responsável.</p></div></div></section>
-<section class="contact" id="contato"><div><p class="eyebrow">CONTATO</p><h2>Vamos conversar sobre a estrutura jurídica do seu negócio.</h2><p>Modelo demonstrativo. Substitua este conteúdo pelos dados reais antes da publicação.</p></div><a class="btn light" href="https://wa.me/5551994525272" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp ↗</a></section></main>
-<footer><div class="logo">JURIS<span>PAGE</span></div><span>Modelo 03 · Advocacia Empresarial</span><span>Landing page demonstrativa</span></footer><script src="script.js"></script><
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Direito Empresarial | Assessoria Jurídica Estratégica</title>
+  <meta name="description" content="Assessoria jurídica empresarial para empresas e empreendedores. Conheça as áreas de atuação e entre em contato para conversar sobre sua necessidade.">
+  <meta name="theme-color" content="#142b3b">
+
+  <!-- LOGO/FAVICON: o arquivo deve existir na pasta img deste modelo -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- CSS principal do Modelo 03 -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    PERSONALIZAÇÃO RÁPIDA:
+    FOTO: modelos/03-empresarial/img/advogado-modelo-03.jpg
+    LOGO: modelos/03-empresarial/img/logo.webp
+    WhatsApp: procure por 5551994525272 neste arquivo e no script.js.
+    Troque o telefone pelo número do profissional, incluindo o código do país e DDD.
+  -->
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Barra superior de demonstração -->
+  <div class="demo-bar">
+    <div class="container demo-bar-inner">
+      <span><i class="fa-solid fa-scale-balanced"></i> MODELO 03 · DIREITO EMPRESARIAL</span>
+      <a href="../../index.html"><i class="fa-solid fa-arrow-left"></i> Voltar para a AdvPage</a>
+    </div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="site-header" id="topo">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="#topo" aria-label="Página inicial">
+        <!-- TROQUE O LOGO: substitua img/logo.webp pelo nome do arquivo desejado -->
+        <img class="brand-logo" src="img/logo.webp" alt="Logo do escritório"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="brand-fallback">JURÍDICO<span>EMPRESARIAL</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu"
+              aria-expanded="false" aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="#atuacao">Áreas de atuação</a>
+        <a href="#sobre">O escritório</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="nav-cta" href="#contato">Fale conosco <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Banner principal -->
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> DIREITO EMPRESARIAL E ESTRATÉGIA</div>
+
+          <h1>Segurança jurídica para <em>decisões que movem</em> sua empresa.</h1>
+
+          <p class="hero-description">
+            Orientação jurídica próxima e estratégica para empresas que buscam
+            tomar decisões com mais clareza, prevenir riscos e estruturar seus negócios.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary"
+               href="https://wa.me/5551994525272?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20assessoria%20jur%C3%ADdica%20empresarial."
+               target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> Conversar com a equipe
+            </a>
+            <a class="button button-outline" href="#atuacao">
+              Conheça nossa atuação <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <p><strong>Estratégia, prevenção e orientação.</strong><br>Atendimento voltado às necessidades de cada negócio.</p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="photo-frame">
+            <!--
+              FOTO DO PROFISSIONAL:
+              Arquivo atual: img/advogado-modelo-03.jpg
+              Para trocar, coloque a nova imagem na pasta img deste modelo
+              e atualize o caminho abaixo.
+            -->
+            <img class="professional-photo"
+                 src="img/foto1.jpg"
+                 alt="Foto ilustrativa do profissional de Direito Empresarial"
+                 fetchpriority="high">
+
+            <div class="photo-overlay"></div>
+            <div class="photo-caption">
+              <span class="caption-line"></span>
+              <div>
+                <small>ATUAÇÃO JURÍDICA</small>
+                <strong>Direito Empresarial</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-top">
+            <span class="floating-icon"><i class="fa-solid fa-briefcase"></i></span>
+            <div><strong>Visão estratégica</strong><small>Orientação para negócios</small></div>
+          </div>
+
+          <div class="floating-card floating-card-bottom">
+            <i class="fa-solid fa-check"></i>
+            <span>Atendimento personalizado</span>
+          </div>
+
+          <div class="visual-index">03 <span>/ 04</span></div>
+        </div>
+      </div>
+
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <!-- Faixa de posicionamento -->
+    <section class="statement">
+      <div class="container statement-inner">
+        <span class="statement-label">NOSSO PROPÓSITO</span>
+        <p>Transformar questões jurídicas em <strong>decisões mais conscientes</strong> para o seu negócio.</p>
+        <a href="#contato" aria-label="Entrar em contato"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Áreas de atuação -->
+    <section class="section services-section" id="atuacao">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">COMO PODEMOS AUXILIAR</span>
+            <h2>Assessoria jurídica alinhada à <em>realidade empresarial.</em></h2>
+          </div>
+          <p>
+            Cada empresa enfrenta desafios próprios. A atuação jurídica deve
+            considerar o contexto, os objetivos e as necessidades de cada negócio.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-top">
+              <span class="service-number">01</span>
+              <span class="service-icon"><i class="fa-solid fa-file-contract"></i></span>
+            </div>
+            <h3>Contratos empresariais</h3>
+            <p>Elaboração, revisão e análise de contratos comerciais, parcerias e prestação de serviços.</p>
+            <a href="#contato" class="service-link">Saiba mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-top">
+              <span class="service-number">02</span>
+              <span class="service-icon"><i class="fa-solid fa-building"></i></span>
+            </div>
+            <h3>Societário e estruturação</h3>
+            <p>Orientação em questões societárias, organização da empresa e relações entre sócios.</p>
+            <a href="#contato" class="service-link">Saiba mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-top">
+              <span class="service-number">03</span>
+              <span class="service-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+            </div>
+            <h3>Prevenção e gestão de riscos</h3>
+            <p>Análise de situações jurídicas que podem impactar as operações e decisões do negócio.</p>
+            <a href="#contato" class="service-link">Saiba mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-top">
+              <span class="service-number">04</span>
+              <span class="service-icon"><i class="fa-solid fa-handshake"></i></span>
+            </div>
+            <h3>Negociações empresariais</h3>
+            <p>Apoio jurídico na avaliação de condições, responsabilidades e alternativas de negociação.</p>
+            <a href="#contato" class="service-link">Saiba mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-top">
+              <span class="service-number">05</span>
+              <span class="service-icon"><i class="fa-solid fa-people-group"></i></span>
+            </div>
+            <h3>Relações de trabalho</h3>
+            <p>Orientação preventiva sobre relações trabalhistas e rotinas empresariais relacionadas à equipe.</p>
+            <a href="#contato" class="service-link">Saiba mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="service-card service-card-featured">
+            <div class="featured-mark"><i class="fa-solid fa-sparkles"></i> ATENDIMENTO PERSONALIZADO</div>
+            <h3>Uma necessidade específica?</h3>
+            <p>Converse com a equipe para explicar sua situação e verificar a possibilidade de atendimento.</p>
+            <a class="button button-light"
+               href="https://wa.me/5551994525272?text=Ol%C3%A1%2C%20tenho%20uma%20necessidade%20jur%C3%ADdica%20empresarial%20espec%C3%ADfica."
+               target="_blank" rel="noopener noreferrer">
+              Falar sobre minha necessidade <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre o escritório -->
+    <section class="about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-art">
+          <div class="about-art-back"></div>
+          <div class="about-art-content">
+            <span class="about-symbol"><i class="fa-solid fa-scale-balanced"></i></span>
+            <span class="about-overline">DIREITO COM PROPÓSITO</span>
+            <p>Clareza para decidir.<br><em>Segurança para avançar.</em></p>
+            <div class="about-art-bottom">
+              <span>ORIENTAÇÃO JURÍDICA</span>
+              <span>EMPRESARIAL</span>
+            </div>
+          </div>
+          <span class="about-deco about-deco-one"></span>
+          <span class="about-deco about-deco-two"></span>
+        </div>
+
+        <div class="about-copy">
+          <span class="section-kicker">O ESCRITÓRIO</span>
+          <h2>Uma relação jurídica construída com <em>confiança e transparência.</em></h2>
+          <p>
+            A assessoria jurídica empresarial vai além da análise de documentos.
+            Ela envolve compreender o cenário, esclarecer possibilidades e auxiliar
+            na avaliação dos caminhos disponíveis.
+          </p>
+          <p>
+            Nosso compromisso é oferecer comunicação clara, cuidado técnico e
+            atendimento atento às particularidades apresentadas por cada cliente.
+          </p>
+
+          <div class="about-values">
+            <div><span><i class="fa-solid fa-check"></i></span><p><strong>Clareza</strong><small>Explicações objetivas sobre cada etapa.</small></p></div>
+            <div><span><i class="fa-solid fa-check"></i></span><p><strong>Responsabilidade</strong><small>Análise cuidadosa de cada situação.</small></p></div>
+            <div><span><i class="fa-solid fa-check"></i></span><p><strong>Proximidade</strong><small>Atendimento atento e personalizado.</small></p></div>
+          </div>
+
+          <a class="text-link" href="#contato">Vamos conversar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Processo de atendimento -->
+    <section class="section process-section" id="processo">
+      <div class="container">
+        <div class="section-heading process-heading">
+          <div>
+            <span class="section-kicker">ETAPAS DO ATENDIMENTO</span>
+            <h2>Um processo claro, <em>do primeiro contato em diante.</em></h2>
+          </div>
+          <p>Você sabe o que esperar e quais informações podem ser necessárias ao longo da conversa.</p>
+        </div>
+
+        <div class="process-list">
+          <article class="process-step">
+            <span class="process-count">01</span>
+            <div><h3>Primeira conversa</h3><p>Você apresenta a necessidade e compartilha as informações iniciais relevantes.</p></div>
+            <i class="fa-solid fa-comments"></i>
+          </article>
+          <article class="process-step">
+            <span class="process-count">02</span>
+            <div><h3>Análise inicial</h3><p>São avaliados o contexto apresentado, os documentos pertinentes e as questões jurídicas envolvidas.</p></div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </article>
+          <article class="process-step">
+            <span class="process-count">03</span>
+            <div><h3>Orientação e próximos passos</h3><p>São esclarecidas as alternativas aplicáveis e, se houver contratação, os próximos passos do trabalho.</p></div>
+            <i class="fa-solid fa-route"></i>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco de contato -->
+    <section class="contact-section" id="contato">
+      <div class="contact-decoration"></div>
+      <div class="container contact-grid">
+        <div>
+          <span class="section-kicker section-kicker-light">FALE CONOSCO</span>
+          <h2>Vamos conversar sobre os desafios jurídicos da sua <em>empresa?</em></h2>
+          <p>Entre em contato para apresentar sua necessidade e verificar as possibilidades de atendimento.</p>
+        </div>
+        <div class="contact-card">
+          <span class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></span>
+          <h3>Inicie uma conversa</h3>
+          <p>Envie uma mensagem pelo WhatsApp. O primeiro contato serve para entender sua demanda e orientar sobre os próximos passos.</p>
+          <a class="button button-primary button-wide"
+             href="https://wa.me/5551994525272?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20assessoria%20jur%C3%ADdica%20empresarial."
+             target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+          </a>
+          <small><i class="fa-solid fa-lock"></i> Evite enviar documentos confidenciais antes de receber orientação.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Perguntas frequentes -->
+    <section class="section faq-section" id="duvidas">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <span class="section-kicker">DÚVIDAS FREQUENTES</span>
+          <h2>Informação clara para <em>começar.</em></h2>
+          <p>Confira algumas orientações gerais sobre o contato e o atendimento jurídico empresarial.</p>
+          <a class="text-link" href="#contato">Tenho outra dúvida <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>Quais empresas podem procurar assessoria?</summary>
+            <p>Empresas de diferentes portes e empreendedores podem entrar em contato para apresentar sua necessidade. A possibilidade de atendimento depende da demanda e da análise profissional.</p>
+          </details>
+          <details>
+            <summary>É possível conversar on-line?</summary>
+            <p>O primeiro contato pode ser iniciado pelo WhatsApp. A disponibilidade e o formato de eventual consulta devem ser confirmados diretamente com o profissional.</p>
+          </details>
+          <details>
+            <summary>Quais documentos devo separar?</summary>
+            <p>Isso depende do assunto. Na primeira conversa, explique a situação e pergunte quais documentos são relevantes. Evite compartilhar informações sensíveis em canais não confirmados.</p>
+          </details>
+          <details>
+            <summary>O primeiro contato garante a contratação?</summary>
+            <p>Não. O contato inicial serve para compreender a demanda e verificar as possibilidades de atendimento. Condições e eventual contratação devem ser esclarecidas diretamente.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <!-- LOGO DO RODAPÉ: pode usar o logo da AdvPage ou o do escritório -->
+        <img src="img/logo.webp" alt="Logo do escritório" class="footer-logo-img"
+             onerror="this.style.display='none'">
+        <p>Assessoria jurídica empresarial com foco em clareza, prevenção e orientação responsável.</p>
+      </div>
+
+      <div class="footer-links">
+        <strong>NAVEGAÇÃO</strong>
+        <a href="#atuacao">Áreas de atuação</a>
+        <a href="#sobre">O escritório</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#duvidas">Dúvidas frequentes</a>
+      </div>
+
+      <div class="footer-contact">
+        <strong>CONTATO</strong>
+        <p>Fale conosco para apresentar sua necessidade.</p>
+        <a href="https://wa.me/5551994525272?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es."
+           target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> Conversar pelo WhatsApp
+        </a>
+        <a href="#topo"><i class="fa-solid fa-arrow-up"></i> Voltar ao topo</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© <span id="ano-atual"></span> · Conteúdo demonstrativo para modelo de site jurídico.</span>
+        <span>Material ilustrativo. A atuação e as informações devem ser personalizadas pelo profissional responsável.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="whatsapp-float"
+     href="https://wa.me/5551994525272?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20Direito%20Empresarial."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Conversar pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

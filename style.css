@@ -1,14 +1,23 @@
+/* =====================================================
+   PALETA DE CORES ADVPAGE — PERSONALIZAÇÃO RÁPIDA
+   Para mudar o visual do site, altere primeiro estas variáveis:
+   --bg: fundo geral | --paper: cartões e áreas claras
+   --ink: textos principais | --muted: textos secundários
+   --navy: botões/áreas fortes | --blue: destaques azuis
+   --gold: cor de destaque terracota | --line: bordas
+   --sand: fundos alternativos | --rose: detalhe suave
+   ===================================================== */
 :root{
---bg:#f7f5f0;
---paper:#fff;
---ink:#17222b;
---muted:#66717a;
---navy:#1e3545;
---blue:#476b80;
---gold:#b18a48;
---line:#e4e0d8;
---sand:#ece5d8;
---rose:#eee2df;
+--bg:#F4F6F8;
+--paper:#FFFFFF;
+--ink:#202A35;
+--muted:#667482;
+--navy:#25384A;
+--blue:#527A91;
+--gold:#C27B5B;
+--line:#DCE3E8;
+--sand:#E8EEF2;
+--rose:#F2E6E1;
 --serif:'Playfair Display',Georgia,serif;
 --sans:'DM Sans',Arial,sans-serif;
 --display:'Manrope',Arial,sans-serif
@@ -194,8 +203,13 @@ position:relative;
 overflow:hidden;
 background:linear-gradient(
 135deg,
+<<<<<<< HEAD
 #895731 0%,
 #eddecf 100%
+=======
+#30475C 0%,
+#E7EEF3 100%
+>>>>>>> 81ac6fa (Melhora fontes e atualiza paginas da AdvPage)
 )
 }
 
@@ -208,8 +222,13 @@ right:-190px;
 top:80px;
 background:radial-gradient(
 circle,
+<<<<<<< HEAD
 #95a9b2 0,
 #eef1ef 45%,
+=======
+#AFC2D0 0,
+#F3F6F8 45%,
+>>>>>>> 81ac6fa (Melhora fontes e atualiza paginas da AdvPage)
 transparent 70%
 )
 }
@@ -279,15 +298,15 @@ box-shadow:0 12px 28px rgba(30,53,69,.14)
 
 .primary{
 background:var(--navy);
-color:#fff
+color:#FFFFFF
 }
 
 .primary:hover{
-background:#29495e
+background:#35536C
 }
 
 .secondary{
-border:1px solid #cfd0cc;
+border:1px solid #CBD5DC;
 background:white
 }
 
@@ -297,7 +316,7 @@ flex-wrap:wrap;
 gap:18px;
 margin-top:27px;
 font-size:10px;
-color:#6c767d
+color:#667482
 }
 
 
@@ -311,7 +330,11 @@ position:relative
 
 .browser{
 background:rgb(193, 187, 187);
+<<<<<<< HEAD
 border:1px solid #dfe0dc;
+=======
+border:1px solid #DCE3E8;
+>>>>>>> 81ac6fa (Melhora fontes e atualiza paginas da AdvPage)
 border-radius:10px;
 padding:9px;
 box-shadow:0 30px 70px rgba(30,53,69,.13);
@@ -325,12 +348,12 @@ box-shadow:0 35px 85px rgba(30,53,69,.17)
 
 .browser-top{
 height:28px;
-border-bottom:1px solid #eceae5;
+border-bottom:1px solid #E5EAEE;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:0 10px;
-color:#8b918f;
+color:#7E8B97;
 font-size:8px
 }
 
@@ -338,12 +361,12 @@ font-size:8px
 width:7px;
 height:7px;
 border-radius:50%;
-background:#7e9a87
+background:#6F918D
 }
 
 .browser-body{
 height:500px;
-background:linear-gradient(145deg,#edf1ef,#dce5e5);
+background:linear-gradient(145deg,#F3F6F8,#E1EAF0);
 padding:25px;
 position:relative;
 overflow:hidden
@@ -365,11 +388,11 @@ display:flex;
 justify-content:space-between;
 font-size:7px;
 letter-spacing:.13em;
-color:#53626a
+color:#526373
 }
 
 .mini-nav span{
-color:#879097
+color:#8995A1
 }
 
 .mini-copy{
@@ -396,7 +419,7 @@ font-style:italic
 
 .mini-copy p{
 font-size:9px;
-color:#66757b;
+color:#667482;
 max-width:220px
 }
 
@@ -434,13 +457,13 @@ animation:priceFloat 4s ease-in-out infinite
 display:block;
 font-size:7px;
 letter-spacing:.15em;
-color:#cdd9df
+color:#D4E0E7
 }
 
 .floating-price strong{
 display:block;
 font:600 29px var(--serif);
-color:#fff
+color:#FFFFFF
 }
 
 
@@ -463,7 +486,7 @@ gap:70px
 font-size:9px;
 font-weight:800;
 letter-spacing:.18em;
-color:#929b9d
+color:#7D8D9A
 }
 
 .intro h2,
@@ -491,7 +514,7 @@ line-height:1.9
 .features{
 border-top:1px solid var(--line);
 border-bottom:1px solid var(--line);
-background:#fbfaf7
+background:#F8FAFB
 }
 
 .feature-grid{
@@ -512,7 +535,7 @@ border-left:1px solid var(--line)
 }
 
 .feature-grid article:hover{
-background:#fff;
+background:#FFFFFF;
 transform:translateY(-2px)
 }
 
@@ -568,7 +591,7 @@ margin-top:58px
 
 .model-card{
 background:white;
-border:1px solid #e3e0d8;
+border:1px solid #DCE3E8;
 border-radius:8px;
 overflow:hidden;
 transition:.4s ease;
@@ -612,32 +635,32 @@ z-index:1
 .art-real{
 background:linear-gradient(
 135deg,
-#b8c7ca,
-#73878e
+#C8D7E1,
+#7892A4
 )
 }
 
 .art-blue{
 background:linear-gradient(
 135deg,
-#dfe8eb,
-#b7c9d0
+#E4EDF2,
+#B8CAD6
 )
 }
 
 .art-sand{
 background:linear-gradient(
 135deg,
-#eee5d4,
-#d6c5a9
+#E9E2DC,
+#D5C5B9
 )
 }
 
 .art-rose{
 background:linear-gradient(
 135deg,
-#eee0dc,
-#cdb8b2
+#F0E3DE,
+#D9C2BA
 )
 }
 
@@ -688,11 +711,11 @@ display:block;
 margin-top:28px;
 font-size:7px;
 letter-spacing:.16em;
-color:#a8b4b8
+color:#B7C5CE
 }
 
 .mock.light small{
-color:#71808a
+color:#6D7E8C
 }
 
 .mock strong{
@@ -719,7 +742,7 @@ padding:18px 21px;
 display:flex;
 justify-content:space-between;
 align-items:end;
-border-top:1px solid #ece9e2
+border-top:1px solid #E4E9ED
 }
 
 .model-info small{
@@ -751,7 +774,7 @@ color:var(--blue)
 
 .pricing{
 padding:120px 0;
-background:#eef2f1
+background:#EAF0F4
 }
 
 .pricing-head{
@@ -776,7 +799,7 @@ margin-top:55px
 
 .price-card{
 background:white;
-border:1px solid #dce2e1;
+border:1px solid #D8E2E8;
 border-radius:10px;
 padding:40px;
 box-shadow:0 18px 45px rgba(30,53,69,.08);
@@ -799,8 +822,8 @@ font-weight:800
 }
 
 .price-top b{
-background:#e8f0ed;
-color:#4d6d60;
+background:#E4EFEE;
+color:#3F7773;
 padding:7px 9px;
 border-radius:20px;
 font-size:7px
@@ -835,7 +858,7 @@ margin:25px 0
 
 .price-card li{
 padding:10px 0;
-border-bottom:1px solid #eee;
+border-bottom:1px solid #E6EBEF;
 font-size:11px
 }
 
@@ -856,7 +879,7 @@ justify-content:space-between
 .price-side span{
 font-size:8px;
 letter-spacing:.17em;
-color:#c7d4da;
+color:#CCD9E1;
 font-weight:800
 }
 
@@ -866,7 +889,7 @@ margin-top:15px
 }
 
 .price-side p{
-color:#c6d0d4;
+color:#C8D5DE;
 font-size:12px;
 line-height:1.8;
 margin-top:12px
@@ -1001,7 +1024,7 @@ margin:18px 0
 
 .contact p{
 max-width:650px;
-color:#6d6b65;
+color:#66717A;
 font-size:14px
 }
 
@@ -1030,8 +1053,8 @@ box-shadow:0 12px 28px rgba(30,53,69,.14)
    ===================================================== */
 
 footer{
-background:#1b252c;
-color:#cfd7db
+background:#202A35;
+color:#D0DAE1
 }
 
 .footer-top{
@@ -1058,7 +1081,7 @@ display:flex;
 justify-content:space-between;
 gap:20px;
 font-size:9px;
-color:#89949a
+color:#8996A2
 }
 
 
