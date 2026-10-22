@@ -129,3 +129,89 @@
     }, {passive:true});
   }
 })();
+
+
+/* =========================================
+   ADVPAGE — AMPLIAR LOGO AO CLICAR
+   ========================================= */
+
+(() => {
+    const logo = document.querySelector('.header .logo');
+    const logoImage = logo?.querySelector('.site-logo');
+
+    if (!logo || !logoImage || document.querySelector('.logo-lightbox')) {
+        return;
+    }
+
+    const lightbox = document.createElement('div');
+    lightbox.className = 'logo-lightbox';
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-modal', 'true');
+    lightbox.setAttribute('aria-label', 'Logo da AdvPage ampliada');
+
+    lightbox.innerHTML = `
+        <div class="logo-lightbox-content">
+            <button class="logo-lightbox-close"
+                    type="button"
+                    aria-label="Fechar imagem ampliada">&times;</button>
+            <img class="logo-lightbox-image" alt="Logo AdvPage ampliada">
+        </div>
+    `;
+
+    document.body.appendChild(lightbox);
+
+    const enlargedImage = lightbox.querySelector('.logo-lightbox-image');
+    const closeButton = lightbox.querySelector('.logo-lightbox-close');
+    const content = lightbox.querySelector('.logo-lightbox-content');
+
+    let previousFocus = null;
+
+    function openLogo(event) {
+        // Não interfere com Ctrl+clique ou botão do meio.
+        if (event && (event.ctrlKey || event.metaKey || event.shiftKey ||
+                      event.altKey || event.button !== 0)) {
+            return;
+        }
+
+        event?.preventDefault();
+
+        enlargedImage.src = logoImage.currentSrc || logoImage.src;
+        enlargedImage.alt = logoImage.alt || 'Logo AdvPage';
+
+        previousFocus = document.activeElement;
+        lightbox.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+        closeButton.focus();
+    }
+
+    function closeLogo() {
+        lightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+
+        if (previousFocus && typeof previousFocus.focus === 'function') {
+            previousFocus.focus();
+        }
+    }
+
+    logo.addEventListener('click', openLogo);
+    closeButton.addEventListener('click', closeLogo);
+
+    lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+            closeLogo();
+        }
+    });
+
+    content.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (!lightbox.classList.contains('is-open')) return;
+
+        if (event.key === 'Escape') {
+            closeLogo();
+        }
+    });
+})();
+

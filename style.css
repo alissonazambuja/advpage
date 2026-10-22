@@ -1,23 +1,14 @@
-/* =====================================================
-   PALETA DE CORES ADVPAGE — PERSONALIZAÇÃO RÁPIDA
-   Para mudar o visual do site, altere primeiro estas variáveis:
-   --bg: fundo geral | --paper: cartões e áreas claras
-   --ink: textos principais | --muted: textos secundários
-   --navy: botões/áreas fortes | --blue: destaques azuis
-   --gold: cor de destaque terracota | --line: bordas
-   --sand: fundos alternativos | --rose: detalhe suave
-   ===================================================== */
 :root{
---bg:#bdbaad;
---paper:#FFFFFF;
---ink:#202A35;
---muted:#667482;
---navy:#25384A;
---blue:#527A91;
---gold:#C27B5B;
---line:#DCE3E8;
---sand:#E8EEF2;
---rose:#F2E6E1;
+--bg:#f7f5f0;
+--paper:#fff;
+--ink:#17222b;
+--muted:#66717a;
+--navy:#1e3545;
+--blue:#476b80;
+--gold:#b18a48;
+--line:#e4e0d8;
+--sand:#ece5d8;
+--rose:#eee2df;
 --serif:'Playfair Display',Georgia,serif;
 --sans:'DM Sans',Arial,sans-serif;
 --display:'Manrope',Arial,sans-serif
@@ -56,7 +47,7 @@ left:12px;
 top:-60px;
 z-index:999;
 background:var(--ink);
-color:rgb(209, 161, 100);
+color:white;
 padding:12px 16px;
 border-radius:0 0 8px 8px
 }
@@ -139,7 +130,7 @@ margin-top:3px
 display:flex;
 gap:27px;
 align-items:center;
-font-size:18px;
+font-size:11px;
 font-weight:600;
 color:#55616a
 }
@@ -203,8 +194,8 @@ position:relative;
 overflow:hidden;
 background:linear-gradient(
 135deg,
-#30475C 0%,
-#E7EEF3 100%
+#895731 0%,
+#eddecf 100%
 )
 }
 
@@ -217,8 +208,8 @@ right:-190px;
 top:80px;
 background:radial-gradient(
 circle,
-#AFC2D0 0,
-#F3F6F8 45%,
+#95a9b2 0,
+#eef1ef 45%,
 transparent 70%
 )
 }
@@ -232,7 +223,7 @@ position:relative
 }
 
 .eyebrow{
-font-size:10px;
+font-size:13px;
 letter-spacing:.19em;
 font-weight:800;
 color:var(--gold)
@@ -288,15 +279,15 @@ box-shadow:0 12px 28px rgba(30,53,69,.14)
 
 .primary{
 background:var(--navy);
-color:#FFFFFF
+color:#fff
 }
 
 .primary:hover{
-background:#35536C
+background:#29495e
 }
 
 .secondary{
-border:1px solid #CBD5DC;
+border:1px solid #cfd0cc;
 background:white
 }
 
@@ -306,7 +297,7 @@ flex-wrap:wrap;
 gap:18px;
 margin-top:27px;
 font-size:10px;
-color:#667482
+color:#6c767d
 }
 
 
@@ -320,7 +311,7 @@ position:relative
 
 .browser{
 background:rgb(193, 187, 187);
-border:1px solid #DCE3E8;
+border:1px solid #dfe0dc;
 border-radius:10px;
 padding:9px;
 box-shadow:0 30px 70px rgba(30,53,69,.13);
@@ -334,12 +325,12 @@ box-shadow:0 35px 85px rgba(30,53,69,.17)
 
 .browser-top{
 height:28px;
-border-bottom:1px solid #E5EAEE;
+border-bottom:1px solid #eceae5;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:0 10px;
-color:#7E8B97;
+color:#8b918f;
 font-size:8px
 }
 
@@ -347,12 +338,12 @@ font-size:8px
 width:7px;
 height:7px;
 border-radius:50%;
-background:#6F918D
+background:#7e9a87
 }
 
 .browser-body{
 height:500px;
-background:linear-gradient(145deg,#F3F6F8,#E1EAF0);
+background:linear-gradient(145deg,#edf1ef,#dce5e5);
 padding:25px;
 position:relative;
 overflow:hidden
@@ -374,11 +365,11 @@ display:flex;
 justify-content:space-between;
 font-size:7px;
 letter-spacing:.13em;
-color:#526373
+color:#53626a
 }
 
 .mini-nav span{
-color:#8995A1
+color:#879097
 }
 
 .mini-copy{
@@ -405,7 +396,7 @@ font-style:italic
 
 .mini-copy p{
 font-size:9px;
-color:#667482;
+color:#66757b;
 max-width:220px
 }
 
@@ -443,13 +434,13 @@ animation:priceFloat 4s ease-in-out infinite
 display:block;
 font-size:7px;
 letter-spacing:.15em;
-color:#D4E0E7
+color:#cdd9df
 }
 
 .floating-price strong{
 display:block;
 font:600 29px var(--serif);
-color:#FFFFFF
+color:#fff
 }
 
 
@@ -469,10 +460,10 @@ gap:70px
 }
 
 .section-kicker{
-font-size:12px;
+font-size:9px;
 font-weight:800;
 letter-spacing:.18em;
-color:#7D8D9A
+color:#929b9d
 }
 
 .intro h2,
@@ -500,7 +491,7 @@ line-height:1.9
 .features{
 border-top:1px solid var(--line);
 border-bottom:1px solid var(--line);
-background:#F8FAFB
+background:#fbfaf7
 }
 
 .feature-grid{
@@ -521,7 +512,7 @@ border-left:1px solid var(--line)
 }
 
 .feature-grid article:hover{
-background:#FFFFFF;
+background:#fff;
 transform:translateY(-2px)
 }
 
@@ -577,7 +568,7 @@ margin-top:58px
 
 .model-card{
 background:white;
-border:1px solid #DCE3E8;
+border:1px solid #e3e0d8;
 border-radius:8px;
 overflow:hidden;
 transition:.4s ease;
@@ -621,32 +612,32 @@ z-index:1
 .art-real{
 background:linear-gradient(
 135deg,
-#C8D7E1,
-#7892A4
+#b8c7ca,
+#73878e
 )
 }
 
 .art-blue{
 background:linear-gradient(
 135deg,
-#E4EDF2,
-#B8CAD6
+#dfe8eb,
+#b7c9d0
 )
 }
 
 .art-sand{
 background:linear-gradient(
 135deg,
-#E9E2DC,
-#D5C5B9
+#eee5d4,
+#d6c5a9
 )
 }
 
 .art-rose{
 background:linear-gradient(
 135deg,
-#F0E3DE,
-#D9C2BA
+#eee0dc,
+#cdb8b2
 )
 }
 
@@ -697,11 +688,11 @@ display:block;
 margin-top:28px;
 font-size:7px;
 letter-spacing:.16em;
-color:#B7C5CE
+color:#a8b4b8
 }
 
 .mock.light small{
-color:#6D7E8C
+color:#71808a
 }
 
 .mock strong{
@@ -728,7 +719,7 @@ padding:18px 21px;
 display:flex;
 justify-content:space-between;
 align-items:end;
-border-top:1px solid #E4E9ED
+border-top:1px solid #ece9e2
 }
 
 .model-info small{
@@ -760,7 +751,7 @@ color:var(--blue)
 
 .pricing{
 padding:120px 0;
-background:#bedad5
+background:#eef2f1
 }
 
 .pricing-head{
@@ -773,7 +764,7 @@ align-items:end
 .pricing-head>p{
 max-width:370px;
 color:var(--muted);
-font-size:15px
+font-size:13px
 }
 
 .price-grid{
@@ -784,12 +775,12 @@ margin-top:55px
 }
 
 .price-card{
-background:rgb(134, 183, 185);
-border:1px solid #D8E2E8;
+background:white;
+border:1px solid #dce2e1;
 border-radius:10px;
 padding:40px;
 box-shadow:0 18px 45px rgba(30,53,69,.08);
-transition:.44s ease
+transition:.35s ease
 }
 
 .price-card:hover{
@@ -802,17 +793,17 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 color:var(--gold);
-font-size:17px;
+font-size:9px;
 letter-spacing:.15em;
 font-weight:800
 }
 
 .price-top b{
-background:#E4EFEE;
-color:#3F7773;
+background:#e8f0ed;
+color:#4d6d60;
 padding:7px 9px;
 border-radius:20px;
-font-size:13px
+font-size:7px
 }
 
 .price-card h3{
@@ -832,7 +823,7 @@ color:var(--muted)
 }
 
 .price-note{
-font-size:19px;
+font-size:11px;
 color:var(--muted);
 max-width:500px
 }
@@ -844,8 +835,8 @@ margin:25px 0
 
 .price-card li{
 padding:10px 0;
-border-bottom:1px solid #E6EBEF;
-font-size:13px
+border-bottom:1px solid #eee;
+font-size:11px
 }
 
 .full{
@@ -863,9 +854,9 @@ justify-content:space-between
 }
 
 .price-side span{
-font-size:14px;
+font-size:8px;
 letter-spacing:.17em;
-color:#CCD9E1;
+color:#c7d4da;
 font-weight:800
 }
 
@@ -875,7 +866,7 @@ margin-top:15px
 }
 
 .price-side p{
-color:#C8D5DE;
+color:#c6d0d4;
 font-size:12px;
 line-height:1.8;
 margin-top:12px
@@ -888,7 +879,7 @@ margin-top:12px
 
 .process{
 padding:125px 0;
-background:rgb(199, 206, 207)
+background:white
 }
 
 .steps{
@@ -1010,7 +1001,7 @@ margin:18px 0
 
 .contact p{
 max-width:650px;
-color:#66717A;
+color:#6d6b65;
 font-size:14px
 }
 
@@ -1039,8 +1030,8 @@ box-shadow:0 12px 28px rgba(30,53,69,.14)
    ===================================================== */
 
 footer{
-background:#202A35;
-color:#D0DAE1
+background:#1b252c;
+color:#cfd7db
 }
 
 .footer-top{
@@ -1057,7 +1048,7 @@ gap:25px
 }
 
 .footer-top nav a{
-font-size:15px
+font-size:10px
 }
 
 .footer-bottom{
@@ -1066,8 +1057,8 @@ padding:18px 0;
 display:flex;
 justify-content:space-between;
 gap:20px;
-font-size:13px;
-color:#8996A2
+font-size:9px;
+color:#89949a
 }
 
 
@@ -1218,13 +1209,13 @@ width:min(100% - 30px,600px)
 }
 
 .logo .site-logo{
-width:100px;
-height:100px
+width:45px;
+height:45px
 }
 
 .footer-logo .site-logo{
-width:70px;
-height:70px
+width:42px;
+height:42px
 }
 
 .logo-text{
@@ -1331,3 +1322,1279 @@ transition:none!important
 }
 
 }
+
+/* =================================================
+   ADVPAGE — VISUAL PREMIUM COLORIDO
+   Luzes, gradientes, botões e cartões interativos
+   Cole no FINAL do style.css principal
+   ================================================= */
+
+:root {
+    --adv-navy: #142b45;
+    --adv-blue: #2878ff;
+    --adv-cyan: #49d7e8;
+    --adv-purple: #8265f5;
+    --adv-gold: #d7a84b;
+    --adv-pink: #f078b5;
+}
+
+/* Fundo geral com um toque de cor */
+body {
+    background-image:
+        radial-gradient(
+            ellipse at 5% 5%,
+            rgba(73, 215, 232, 0.09),
+            transparent 32%
+        ),
+        radial-gradient(
+            ellipse at 95% 25%,
+            rgba(130, 101, 245, 0.07),
+            transparent 30%
+        );
+}
+
+/* Cabeçalho com transparência elegante */
+.header {
+    position: relative;
+    z-index: 20;
+    border-bottom: 1px solid rgba(40, 120, 255, 0.13);
+    box-shadow: 0 6px 24px rgba(20, 43, 69, 0.05);
+}
+
+/* Logo com brilho azul e dourado */
+.logo {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-2px) scale(1.045);
+    filter: drop-shadow(0 4px 12px rgba(40, 120, 255, 0.25));
+}
+
+.logo:hover .site-logo {
+    filter: drop-shadow(0 0 9px rgba(215, 168, 75, 0.6));
+}
+
+/* Menu com efeito colorido */
+.nav-links a {
+    position: relative;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-links a:not(.nav-button)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        var(--adv-blue),
+        var(--adv-cyan),
+        var(--adv-purple)
+    );
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:not(.nav-button):hover {
+    color: var(--adv-blue);
+}
+
+.nav-links a:not(.nav-button):hover::after {
+    transform: scaleX(1);
+}
+
+/* Hero com manchas de luz decorativas */
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(2px);
+}
+
+.hero::before {
+    width: 260px;
+    height: 260px;
+    top: 20px;
+    right: 3%;
+    background: radial-gradient(
+        circle,
+        rgba(73, 215, 232, 0.18),
+        rgba(40, 120, 255, 0.06) 45%,
+        transparent 72%
+    );
+    animation: advFloat 8s ease-in-out infinite;
+}
+
+.hero::after {
+    width: 210px;
+    height: 210px;
+    left: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle,
+        rgba(130, 101, 245, 0.13),
+        transparent 70%
+    );
+    animation: advFloat 10s ease-in-out infinite reverse;
+}
+
+/* Título com acabamento de cor */
+.hero-copy h1 {
+    text-wrap: balance;
+}
+
+.hero-copy h1 strong,
+.hero-copy h1 span {
+    background: linear-gradient(
+        110deg,
+        var(--adv-blue),
+        var(--adv-purple),
+        var(--adv-gold)
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: advGradient 6s ease-in-out infinite alternate;
+}
+
+/* Botões principais com gradiente azul-violeta */
+.hero .button,
+.hero .btn,
+.nav-links .nav-button,
+button,
+a.button,
+a.btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    border-radius: 12px;
+    transition:
+        transform 0.28s ease,
+        box-shadow 0.28s ease,
+        filter 0.28s ease;
+}
+
+.hero .button-primary,
+.hero .btn-primary,
+.nav-links .nav-button {
+    background-image: linear-gradient(
+        115deg,
+        #246bdb,
+        #5367ee 55%,
+        #8265f5
+    );
+    color: #fff;
+    box-shadow:
+        0 6px 18px rgba(40, 120, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+/* Reflexo que percorre os botões */
+.hero .button::before,
+.hero .btn::before,
+.nav-links .nav-button::before,
+button::before,
+a.button::before,
+a.btn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    left: -80%;
+    width: 45%;
+    height: 200%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transform: rotate(22deg);
+    transition: left 0.55s ease;
+}
+
+.hero .button:hover::before,
+.hero .btn:hover::before,
+.nav-links .nav-button:hover::before,
+button:hover::before,
+a.button:hover::before,
+a.btn:hover::before {
+    left: 140%;
+}
+
+.hero .button:hover,
+.hero .btn:hover,
+.nav-links .nav-button:hover,
+button:hover,
+a.button:hover,
+a.btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 28px rgba(40, 120, 255, 0.25),
+        0 0 0 3px rgba(73, 215, 232, 0.1);
+    filter: saturate(1.15);
+}
+
+/* Botões de contorno com borda viva */
+.button-outline,
+.btn-outline {
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(
+            110deg,
+            var(--adv-blue),
+            var(--adv-cyan),
+            var(--adv-purple)
+        ) border-box;
+}
+
+/* Cartões dos modelos com bordas gradientes */
+.model-card {
+    position: relative;
+    isolation: isolate;
+    border: 1px solid rgba(40, 120, 255, 0.14);
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(20, 43, 69, 0.05);
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.model-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        var(--adv-blue),
+        var(--adv-cyan),
+        var(--adv-purple),
+        var(--adv-gold)
+    );
+    background-size: 250% 250%;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.model-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 18px 42px rgba(20, 43, 69, 0.12),
+        0 0 22px rgba(40, 120, 255, 0.07);
+    border-color: rgba(40, 120, 255, 0.3);
+}
+
+.model-card:hover::before {
+    opacity: 1;
+    animation: advGradient 5s linear infinite;
+}
+
+/* Imagens dos modelos com zoom suave */
+.model-art {
+    overflow: hidden;
+}
+
+.model-art img {
+    transition: transform 0.55s ease, filter 0.55s ease;
+}
+
+.model-card:hover .model-art img {
+    transform: scale(1.055);
+    filter: saturate(1.12);
+}
+
+/* Cartões de preço com destaque dourado */
+.price-card {
+    position: relative;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(20, 43, 69, 0.1);
+}
+
+.price-card.featured {
+    border-top: 3px solid var(--adv-gold);
+    box-shadow: 0 10px 30px rgba(215, 168, 75, 0.11);
+}
+
+/* Ícones e pequenos destaques */
+.model-card h3,
+.price-card h3 {
+    transition: color 0.25s ease;
+}
+
+.model-card:hover h3 {
+    color: var(--adv-blue);
+}
+
+/* Rodapé com faixa multicolorida */
+footer {
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        var(--adv-blue),
+        var(--adv-cyan),
+        var(--adv-purple),
+        var(--adv-pink),
+        var(--adv-gold)
+    );
+    background-size: 200% 100%;
+    animation: advGradient 8s linear infinite;
+}
+
+/* Animações */
+@keyframes advFloat {
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -14px, 0);
+    }
+}
+
+@keyframes advGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Celulares: visual leve e sem animações de hover */
+@media (max-width: 600px) {
+    .hero::before {
+        width: 150px;
+        height: 150px;
+        right: -35px;
+    }
+
+    .hero::after {
+        width: 120px;
+        height: 120px;
+    }
+
+    .model-card:hover,
+    .price-card:hover {
+        transform: none;
+    }
+}
+
+/* Acessibilidade: respeita a preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+/* ============================================
+   ADVPAGE — DETALHES DECORATIVOS PREMIUM
+   Cole no final do style.css principal
+   ============================================ */
+
+:root {
+    --adv-gold: #b18a48;
+    --adv-gold-light: #d8bd88;
+    --adv-navy: #1e3545;
+}
+
+/* Cabeçalho com acabamento refinado */
+.header {
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.header:hover {
+    box-shadow: 0 5px 24px rgba(30, 53, 69, 0.07);
+}
+
+/* Linha dourada decorativa abaixo do cabeçalho */
+.header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(177, 138, 72, 0.55),
+        transparent
+    );
+}
+
+/* Logo com brilho discreto */
+.logo:hover .site-logo {
+    filter: drop-shadow(0 0 8px rgba(177, 138, 72, 0.42));
+}
+
+/* Hero: pequenos detalhes de luz no fundo */
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 4%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(177, 138, 72, 0.12),
+        rgba(177, 138, 72, 0)
+    );
+    pointer-events: none;
+    z-index: -1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 2%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(71, 107, 128, 0.09),
+        transparent 70%
+    );
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Pequeno detalhe dourado nos títulos das seções */
+.models h2,
+.intro h2,
+.price-card h2 {
+    text-decoration-color: var(--adv-gold);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+}
+
+/* Cartões dos modelos com borda elegante */
+.model-card {
+    position: relative;
+    overflow: hidden;
+    border-color: rgba(30, 53, 69, 0.09);
+}
+
+.model-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        var(--adv-gold),
+        var(--adv-gold-light),
+        transparent
+    );
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+    z-index: 2;
+}
+
+.model-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Imagens dos modelos com zoom muito leve */
+.model-art {
+    overflow: hidden;
+}
+
+.model-art img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.model-card:hover .model-art img {
+    transform: scale(1.035);
+    filter: saturate(1.06);
+}
+
+/* Botões principais com gradiente sutil */
+.hero .button,
+.hero .btn,
+.nav-button {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.hero .button:hover,
+.hero .btn:hover,
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 22px rgba(30, 53, 69, 0.16);
+}
+
+/* Preços e cartões com profundidade */
+.price-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(30, 53, 69, 0.1);
+    border-color: rgba(177, 138, 72, 0.4);
+}
+
+/* Perguntas frequentes: realce ao interagir */
+.faq details,
+.faq-item {
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.faq details:hover,
+.faq-item:hover {
+    border-color: rgba(177, 138, 72, 0.5);
+}
+
+/* Links com transição suave */
+a {
+    transition: color 0.25s ease;
+}
+
+/* Rodapé com uma linha superior delicada */
+footer {
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--adv-gold),
+        transparent
+    );
+}
+
+/* Animação discreta de entrada */
+@keyframes advFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero-copy {
+        animation: advFadeUp 0.65s ease both;
+    }
+
+    .hero-card {
+        animation: advFadeUp 0.8s ease both;
+    }
+}
+
+/* Respeita preferência por menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
+
+/* Mantém a página confortável em dispositivos móveis */
+@media (max-width: 600px) {
+    .hero::before {
+        width: 110px;
+        height: 110px;
+        right: 0;
+    }
+
+    .hero::after {
+        width: 75px;
+        height: 75px;
+        left: 0;
+    }
+
+    .model-card:hover,
+    .price-card:hover {
+        transform: none;
+    }
+}
+
+
+
+/* ============================================
+   ADVPAGE — CABEÇALHO PROFISSIONAL
+   Logo maior, menu legível e botões refinados
+   ============================================ */
+
+/* Cabeçalho */
+.header {
+    position: relative;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid rgba(177, 138, 72, 0.3);
+    box-shadow: 0 5px 22px rgba(20, 43, 69, 0.07);
+}
+
+/* Área de navegação */
+.header .nav {
+    min-height: 94px;
+    gap: 32px;
+}
+
+/* Logo completa */
+.header .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    text-decoration: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.header .logo:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 8px rgba(177, 138, 72, 0.2));
+}
+
+/* Símbolo da logo maior */
+.header .site-logo {
+    display: block;
+    width: 64px;
+    height: 64px;
+    max-width: none;
+    object-fit: contain;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.header .logo:hover .site-logo {
+    transform: scale(1.07);
+}
+
+/* Nome ADVPAGE */
+.header .logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #1e3545;
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.15;
+}
+
+/* Subtítulo da marca */
+.header .logo-text small {
+    display: block;
+    color: #6d7780;
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+/* Menu mais espaçado e legível */
+.header .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.header .nav-links a {
+    color: #263c4b;
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    white-space: nowrap;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.header .nav-links a:not(.nav-button):hover {
+    color: #a77d36;
+    transform: translateY(-1px);
+}
+
+/* Botão de WhatsApp */
+.header .nav-links .nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 13px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: linear-gradient(120deg, #1e3545, #285c7b);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 5px 14px rgba(30, 53, 69, 0.16);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.header .nav-links .nav-button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(120deg, #285c7b, #2878a8);
+    box-shadow: 0 9px 22px rgba(40, 92, 123, 0.25);
+}
+
+/* Menu para telas menores */
+@media (max-width: 1000px) {
+    .header .nav {
+        min-height: 82px;
+        gap: 18px;
+    }
+
+    .header .site-logo {
+        width: 56px;
+        height: 56px;
+    }
+
+    .header .logo-text {
+        font-size: 21px;
+    }
+
+    .header .nav-links {
+        gap: 14px;
+    }
+
+    .header .nav-links a {
+        font-size: 14px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 700px) {
+    .header .nav {
+        min-height: 76px;
+        gap: 12px;
+    }
+
+    .header .site-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .header .logo {
+        gap: 10px;
+    }
+
+    .header .logo-text {
+        font-size: 19px;
+        letter-spacing: 1.5px;
+    }
+
+    .header .logo-text small {
+        max-width: 180px;
+        font-size: 8px;
+        letter-spacing: 0.8px;
+        white-space: normal;
+    }
+
+    .header .menu {
+        flex-shrink: 0;
+    }
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .header .logo,
+    .header .site-logo,
+    .header .nav-links a {
+        transition: none;
+    }
+}
+
+
+
+/* ============================================
+   ADVPAGE — AJUSTE FINO DE LEGIBILIDADE
+   Página principal: textos, menu e botões
+   ============================================ */
+
+/* Texto geral mais confortável */
+body {
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+/* Texto descritivo abaixo do título principal */
+.hero-copy p,
+.hero-copy .hero-description {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #465765;
+    max-width: 620px;
+}
+
+/* Etiqueta acima do título */
+.hero-copy .eyebrow,
+.hero-copy .hero-label,
+.hero-copy > span {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+/* Informações pequenas abaixo dos botões */
+.hero-copy small,
+.hero-copy li,
+.hero-copy .hero-trust,
+.hero-copy .trust-item {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #465765;
+}
+
+/* Título principal */
+.hero-copy h1 {
+    font-size: clamp(42px, 4.5vw, 62px);
+    line-height: 1.12;
+}
+
+/* Textos da apresentação da solução */
+.intro p,
+.intro .intro-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #465765;
+}
+
+/* Título e introdução da seção de modelos */
+.models h2 {
+    font-size: clamp(32px, 3.5vw, 44px);
+    line-height: 1.2;
+}
+
+.models p {
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+/* Nome e descrição de cada modelo */
+.model-card h3 {
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+.model-card p {
+    font-size: 17px;
+    line-height: 1.75;
+    color: #465765;
+}
+
+/* Preços e informações dos planos */
+.price-card p,
+.price-card li {
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+/* Menu superior: maior contraste e leitura */
+.header .nav-links a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #203748;
+}
+
+/* Botão de contato do menu */
+.header .nav-links .nav-button {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* Botões da página */
+.hero .button,
+.hero .btn,
+.model-card a,
+.price-card a,
+.button,
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* Subtítulo da marca */
+.header .logo-text small {
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+/* Rodapé mais legível */
+footer p,
+footer li,
+footer a {
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+/* Celulares */
+@media (max-width: 700px) {
+    body {
+        font-size: 17px;
+    }
+
+    .hero-copy h1 {
+        font-size: 37px;
+        line-height: 1.17;
+    }
+
+    .hero-copy p,
+    .hero-copy .hero-description,
+    .intro p,
+    .intro .intro-text,
+    .models p {
+        font-size: 17px;
+        line-height: 1.75;
+    }
+
+    .hero-copy small,
+    .hero-copy li,
+    .hero-copy .hero-trust,
+    .hero-copy .trust-item {
+        font-size: 14px;
+    }
+
+    .model-card h3 {
+        font-size: 21px;
+    }
+
+    .model-card p,
+    .price-card p,
+    .price-card li {
+        font-size: 16px;
+    }
+
+    .hero .button,
+    .hero .btn,
+    .model-card a,
+    .price-card a,
+    .button,
+    .btn {
+        font-size: 16px;
+    }
+}
+
+
+/* ============================================
+   ADVPAGE — BOTÕES JURÍDICOS PREMIUM
+   Azul-marinho, dourado e movimentos elegantes
+   ============================================ */
+
+/* Transição base */
+.hero .button,
+.hero .btn,
+.header .nav-button,
+.model-card a,
+.price-card a,
+.button,
+.btn,
+button {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    font-weight: 700;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+/* Botões principais: azul-marinho */
+.hero .button-primary,
+.hero .btn-primary,
+.header .nav-button,
+button[type="submit"] {
+    background: #1e3545;
+    color: #fff;
+    border: 1px solid #1e3545;
+    box-shadow: 0 4px 12px rgba(30, 53, 69, 0.12);
+}
+
+/* Ao passar o mouse: azul mais profundo e linha dourada */
+.hero .button-primary:hover,
+.hero .btn-primary:hover,
+.header .nav-button:hover,
+button[type="submit"]:hover {
+    background: #294b60;
+    border-color: #b18a48;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow:
+        0 7px 18px rgba(30, 53, 69, 0.18),
+        0 2px 0 #b18a48;
+}
+
+/* Botões secundários: fundo claro e borda dourada */
+.hero .button-outline,
+.hero .btn-outline,
+.button-outline,
+.btn-outline {
+    background: #fff;
+    color: #1e3545;
+    border: 1px solid #b18a48;
+    box-shadow: 0 3px 10px rgba(30, 53, 69, 0.04);
+}
+
+.hero .button-outline:hover,
+.hero .btn-outline:hover,
+.button-outline:hover,
+.btn-outline:hover {
+    background: #f7f3eb;
+    color: #142b3b;
+    border-color: #8d692f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(30, 53, 69, 0.1);
+}
+
+/* Links de ação nos cartões */
+.model-card a,
+.price-card a {
+    text-decoration: none;
+    text-underline-offset: 4px;
+    transition: color 0.25s ease;
+}
+
+.model-card a:hover,
+.price-card a:hover {
+    color: #9b7538;
+}
+
+/* Pequeno detalhe dourado no foco por teclado */
+.hero .button:focus-visible,
+.hero .btn:focus-visible,
+.header .nav-button:focus-visible,
+.model-card a:focus-visible,
+.price-card a:focus-visible,
+button:focus-visible {
+    outline: 3px solid rgba(177, 138, 72, 0.65);
+    outline-offset: 4px;
+}
+
+/* Evita movimento exagerado em celulares */
+@media (hover: none) {
+    .hero .button:hover,
+    .hero .btn:hover,
+    .header .nav-button:hover,
+    .model-card a:hover,
+    .price-card a:hover,
+    button:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* Respeita preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    .hero .button,
+    .hero .btn,
+    .header .nav-button,
+    .model-card a,
+    .price-card a,
+    button {
+        transition: none;
+    }
+}
+
+
+/* =========================================
+   ADVPAGE — LOGO INTERATIVA
+   ========================================= */
+
+/* Efeito ao passar o mouse */
+.header .logo {
+    cursor: zoom-in;
+    transform-origin: left center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.header .logo:hover {
+    transform: scale(1.045);
+    filter: drop-shadow(0 4px 10px rgba(177, 138, 72, 0.28));
+}
+
+.header .site-logo {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.header .logo:hover .site-logo {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 8px rgba(177, 138, 72, 0.45));
+}
+
+/* Fundo escuro da visualização ampliada */
+.logo-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(10, 22, 32, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.28s ease, visibility 0.28s ease;
+    cursor: zoom-out;
+}
+
+.logo-lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Área da imagem */
+.logo-lightbox-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(440px, 88vw);
+    min-height: 240px;
+    padding: 35px;
+    border: 1px solid rgba(215, 168, 75, 0.55);
+    border-radius: 22px;
+    background: #fff;
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.35),
+        0 0 35px rgba(215, 168, 75, 0.12);
+    transform: scale(0.88) translateY(12px);
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+.logo-lightbox.is-open .logo-lightbox-content {
+    transform: scale(1) translateY(0);
+}
+
+.logo-lightbox-image {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    max-height: 65vh;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Botão fechar */
+.logo-lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #e5dccb;
+    border-radius: 50%;
+    background: #fff;
+    color: #1e3545;
+    font-size: 27px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.logo-lightbox-close:hover {
+    background: #1e3545;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .logo-lightbox-content {
+        width: 90vw;
+        min-height: 200px;
+        padding: 28px;
+    }
+
+    .logo-lightbox-image {
+        max-width: 280px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .header .logo,
+    .header .site-logo,
+    .logo-lightbox,
+    .logo-lightbox-content {
+        transition: none;
+    }
+}
+
